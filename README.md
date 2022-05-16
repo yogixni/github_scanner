@@ -35,7 +35,7 @@ query getListOfRepository {
       name
       size
       owner
-      private
+      visibility
       noOfFiles
       fileContent
       webhooks{

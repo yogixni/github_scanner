@@ -14,7 +14,7 @@ exports.schema = buildSchema(`
         name: String,
         size: Int,
         owner: String,
-        private: Boolean,
+        visibility: String,
         noOfFiles: Int,
         fileContent: String,
         webhooks: [Webhook]

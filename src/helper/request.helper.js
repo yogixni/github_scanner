@@ -72,7 +72,7 @@ const processAndPrepareResponseForRepository = async (el) => {
                 name: el.name,
                 owner: el.owner.login,
                 size: el.size,
-                private: el.private,
+                visibility: el.visibility,
                 noOfFiles: data.fileCount,
                 fileContent: data.fileContent ? await getFileContent(data.fileContent) : '',
                 webhooks: await getRepositoryActiveWebhooks(el.name)
